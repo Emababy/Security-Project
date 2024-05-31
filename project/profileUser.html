@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- animate on scroll library -->
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- File Css Main -->
+    <link rel="stylesheet" href="./css/english/main.css" />
+    <!-- File Css Home -->
+    <link rel="stylesheet" href="./css/english/profileUser.css">
+    <!-- File Css Header -->
+    <link rel="stylesheet" href="./css/english/header.css">
+    <!-- File Css Footer -->
+    <link rel="stylesheet" href="./css/english/footer.css">
+
+</head>
+
+<body>
+    <!-- Start Header -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-sticky">
+        <div class="container">
+            <div class="logo">
+                <a href="./index.html">
+                    <img src="./images/logo/logo.png" alt="">
+                </a>
+            </div>
+            <div class="btn-group mb-3 smallNone" role="group">
+                <button type="button" class="language dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="./images/language-icon/united-states-of-america.png"> EN
+                </button>
+                <ul class="dropdown-menu">
+                    <li class="arabic"><a href="./profile_user_arabic.html"><img src="./images/language-icon/egypt.png">
+                            AR</a> </li>
+                    <li> <a href="./profileUser.html"><img src="./images/language-icon/united-states-of-america.png">
+                            EN</a> </li>
+                </ul>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="./products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./profileUser.html">My Account</a>
+                    </li>
+                </ul>
+                <div class="btn-group mb-3 bigNone" role="group">
+                    <button type="button" class="language dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="./images/language-icon/united-states-of-america.png"> EN
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li class="arabic"><a href="./profile_user_arabic.html"><img
+                                    src="./images/language-icon/egypt.png">
+                                AR</a> </li>
+                        <li> <a href="./profileUser.html"><img src="./images/language-icon/united-states-of-america.png">
+                                EN</a> </li>
+                    </ul>
+                </div>
+                <a href="./cart.html" class="icon" id="cartIcon">
+                    <span class="count" id="count">0</span>
+                    <i class="fa-solid fa-cart-plus"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Header -->
+    <!-- Start Profile -->
+    <div class="profile wow animate__fadeIn" data-wow-duration="2s">
+        <div class="container">
+            <div class="title pt-5">
+                My Account
+            </div>
+            <div class="bodyProfile pt-3 pb-5">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <ul>
+                            <li><a class="active" href="profileUser.html">Account Info</a></li>
+                            <li><a href="./profileOrder.html">My Orders</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="accountInfo">
+                            <div class="row g-3 align-items-center  mb-2">
+                                <div class="col-2">
+                                    <label for="name" class="col-form-label">Name</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="name" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-2">
+                                <div class="col-2">
+                                    <label for="email" class="col-form-label">Email</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="email" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-2">
+                                <div class="col-2">
+                                    <label for="location" class="col-form-label">Location</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="location" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-2">
+                                <div class="col-2">
+                                    <label for="phone" class="col-form-label">Phone</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="phone" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-2">
+                                <div class="col-2">
+                                    <label for="totalSales" class="col-form-label">Sales</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="totalSales" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                            <div class="row g-3 align-items-center mb-2">
+                                <div class="col-2">
+                                    <label for="totalOrders" class="col-form-label">Orders</label>
+                                </div>
+                                <div class="col-10">
+                                    <input type="text" id="totalOrders" class="form-control"
+                                        aria-describedby="passwordHelpInline" value="" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Profile -->
+    <!-- Button Scroll UP And Button Whatts App -->
+    <button class="btn btn-primary rounded-pill scroll" id="buttonScroll"><i class="fa-solid
+        fa-angles-up"></i></button>
+    <a class="whatts" href="https://wa.me/+2001017159471"><i class="fa-brands fa-whatsapp"></i></a>
+    <!-- Button Scroll UP And Button Whatts App -->
+    <!-- Start Footer -->
+    <footer class="pb-5">
+        <div class="part position-relative">
+            <div class="container">
+                <div class="row pb-2">
+                    <div class="col-lg-3 col-md-6 p-sm-3">
+                        <div class="part-1 mt-5">
+                            <a href="./products.html"><img src="./images/logo/logo.png" alt=""></a>
+                            <p class="text-white-50 pe-1 mt-3">E-Commerce Is One Shop Where You Can Find The Best Bed
+                                Linen, Bedding, Mattress, Towels, Bean Bags & More.....</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-sm-3">
+                        <div class="part-2 mt-5">
+                            <h3>Address</h3>
+                            <ul class="mt-4">
+                                <li class="phone">
+                                    <a href="https://wa.me/+2001017159471">
+                                        +20 01017159471
+                                    </a>
+                                </li>
+                                <li class="email">
+                                    <a href="">
+                                        E-Commerce
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-sm-3">
+                        <div class="part-3 mt-5">
+                            <h3>Quick Links</h3>
+                            <ul class="pt-3">
+                                <li><a href="./index.html">Home</a></li>
+                                <li><a href="./products.html">Products</a></li>
+                                <li><a href="./contact.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 p-sm-3">
+                        <div class="part-4 mt-5">
+                            <h3>Call us</h3>
+                            <p class="text-white-50 pe-5">Contact us via e-mail or phone, we are waiting for your call
+                                or message</p>
+                            <div class="email-call mt-2 mb-2">
+                                <a href="">
+                                    E-Commerce
+                                </a>
+                            </div>
+                            <div class="icons d-flex justify-content-start mt-4">
+                                <div class="icon facebook">
+                                    <a href=""><i
+                                            class="fa-brands fa-facebook-f"></i></a>
+                                </div>
+                                <div class="icon instagram">
+                                    <a href=""><i
+                                            class="fa-brands fa-instagram"></i></i></a>
+                                </div>
+                                <div class="icon twitter">
+                                    <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                </div>
+                                <div class="icon linkedin">
+                                    <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer">
+                    <p>Copyright @ E-Commerce</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <!-- File Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- File Js Wow -->
+    <script src="./js/wow.min.js"></script>
+    <!-- File Js ProfileUser -->
+    <script src="./js/english/profileUser.js"></script>
+</body>
+
+</html>

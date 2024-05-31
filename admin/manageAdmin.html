@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Admins</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- File Css Main -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- File Css Partner -->
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- File Css Footer Dash -->
+    <link rel="stylesheet" href="./css/footerDash.css">
+</head>
+
+<body>
+    <div class="admin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 part-1 nonePadding bigScreen sidebar">
+                    <div class="dash">
+                        <img src="./images/logo/logo.png" class="ps-3 pt-3 pb-3 img-fluid" alt="">
+                        <ul>
+                            <li><a href="./dashboard.html"><i class="fa-solid fa-tv"></i> Dashboard</a></li>
+                            <li><a href="./products.html"><i class="fa-solid fa-bag-shopping"></i> Products</a></li>
+                            <li><a href="./addProducts.html"><i class="fa-solid fa-cart-plus"></i> Add Products</a></li>
+                            <li><a href="./updateProduct.html"><i class="fa-solid fa-screwdriver-wrench"></i> Update
+                                    Product</a></li>
+                            <li><a href="./deleteProduct.html"><i class="fa-solid fa-trash"></i> Delete Products</a>
+                            </li>
+                            <li><a class="active" href="./addCategory.html"><i class="fa-solid fa-lines-leaning"></i>
+                                    Add Category</a>
+                            </li>
+                            <li><a href="./orders.html"><i class="fa-solid fa-truck-fast"></i> Orders</a>
+                            </li>
+                            <li><a href="./users.html"><i class="fa-solid fa-users"></i> Users</a></li>
+                            <li><a href="./messages.html"><i class="fa-solid fa-message"></i>
+                                    Messages</a>
+                            </li>
+                            <li><a href="./manageAdmin.html"><i class="fa-solid fa-user-shield"></i>
+                                    Add Admin</a>
+                            </li>
+                            <li><a href="./adminprofile.html"><i class="fa-solid fa-user"></i>
+                                    Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-9 nonePadding d-flex justify-content-between flex-column height-100">
+                    <div class="product">
+                        <nav class="navbar navbar-expand-lg d-md-none">
+                            <div class="container-fluid pt-2">
+                                <div class="navbar-brand"><img src="./images/logo/logo.png"
+                                        class="ps-3 pt-3 pb-3 img-fluid" alt=""></div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse p-1" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <div class="dash smallScreen">
+                                            <ul>
+                                                <li><a href="./dashboard.html"><i class="fa-solid fa-tv"></i>
+                                                        Dashboard</a>
+                                                </li>
+                                                <li><a href="./products.html"><i class="fa-solid fa-bag-shopping"></i>
+                                                        Products</a></li>
+                                                <li><a href="./addProducts.html"><i class="fa-solid fa-cart-plus"></i>
+                                                        Add Products</a></li>
+                                                <li><a href="./updateProduct.html"><i
+                                                            class="fa-solid fa-screwdriver-wrench"></i> Update
+                                                        Product</a></li>
+                                                <li><a href="./deleteProduct.html"><i class="fa-solid fa-trash"></i>
+                                                        Delete Products</a>
+                                                </li>
+                                                <li><a class="active" href="./addCategory.html"><i
+                                                            class="fa-solid fa-lines-leaning"></i> Add Category</a>
+                                                </li>
+                                                <li><a href="./orders.html"><i class="fa-solid fa-truck-fast"></i>
+                                                        Orders</a>
+                                                </li>
+                                                <li><a href="./users.html"><i class="fa-solid fa-users"></i> Users</a>
+                                                </li>
+                                                <li><a href="./messages.html"><i class="fa-solid fa-message"></i>
+                                                        Messages</a>
+                                                </li>
+                                                <li><a href="./manageAdmin.html"><i class="fa-solid fa-user-shield"></i>
+                                                        Add Admin</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="addCategory pt-5 ps-md-5">
+                            <div class="container overflow-hidden">
+                                <div class="title">
+                                    <h1>Mange Admins</h1>
+                                    <div aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="./dashboard.html">Dashboard</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Manage Admin</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <form id="submit" class="show">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-5">
+                                            <div class="mb-3">
+                                                <label for="username" class="form-label">Admin Name
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                    id="username" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="email" class="form-label">Admin Email
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                    id="email" required>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="role" class="form-label">Role
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                    id="role" required placeholder="if you want to cotntrol the site enter owner">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="password" class="form-label">Admin Password
+                                                </label>
+                                                <input type="password" class="form-control"
+                                                    id="password" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-10">
+                                            <button type="submit" class="buttonAdd">Add Admin</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="row">
+                                    <div class="col-lg-10">
+                                        <div class="showData">
+                                            <h1 class="mt-3">Admins</h1>
+                                            <table class="table table-striped overflow-auto">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Name</th>
+                                                        <th scope="col">Email</th>
+                                                        <th scope="col">Role</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tableBody">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="pb-3 pt-3">
+                        <div class="container d-flex justify-content-end align-items-center">
+                            <div class="div">
+                                ©2023 - 24 <a href="#">E-Commerce</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- CDN Sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- File Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- File Js Add Category -->
+    <script src="./js/mangeAdmin.js"></script>
+
+</body>
+
+</html>

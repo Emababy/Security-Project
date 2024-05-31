@@ -1,0 +1,147 @@
+/* Font Google */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* Constants */
+:root {
+    --primary-color: #28b8c0;
+    --section-color: #eff7fa;
+    --brown-color: #797979;
+}
+
+::-webkit-scrollbar {
+    width: 15px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 30px;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Cairo', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    position: relative;
+}
+
+.buttonStyle {
+    padding: 10px 35px !important;
+    border-radius: 20px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    transition: 0.5s;
+    color: white;
+}
+
+.buttonStyle:focus {
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.buttonStyle:hover {
+    border: 1px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.buttonStyleBack {
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 5px 40px;
+    text-align: center;
+    width: fit-content;
+    margin: 5px auto;
+    background-color: transparent;
+    font-size: 25px;
+    font-weight: 600;
+    transition: 0.5s;
+}
+
+@media(max-width:767px) {
+    .buttonStyleBack {
+        padding: 5px 20px;
+        margin: 50px auto 0;
+        font-size: 20px;
+        transition: 0.5s;
+    }
+}
+
+@media(max-width:992px) {
+    .buttonStyleBack {
+        margin: 20px auto 0;
+    }
+}
+
+.buttonStyleBack i {
+    font-size: 20px;
+    margin: 0 10px 0 0;
+}
+
+.buttonStyleBack:hover {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+
+
+.right {
+    border: 1px solid #25d366;
+}
+
+.wrong {
+    border: 1px solid red;
+}
+
+.checkNone {
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.tablefooternone {
+    display: none;
+}
+.bigNone {
+    display: block;
+}
+
+.smallNone {
+    display: none;
+}
+
+@media(max-width:992px){
+    .bigNone {
+        display: none;
+    }
+}
+
+@media(max-width:992px){
+    .smallNone {
+        display: block
+    }
+}
+
+
+.breadcrumb a {
+    color:var(--primary-color);
+    font-weight:600;
+}

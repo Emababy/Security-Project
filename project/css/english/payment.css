@@ -1,0 +1,66 @@
+/* start medthod check out */
+.checkout-methods {
+  height: 100% !important;
+  z-index: 10000000;
+}
+
+.checkout-methods .form-check {
+  border: 1px solid var(--primary-color);
+  padding: 10px 20px;
+  border-radius: 15px;
+  margin: 20px 0px;
+}
+
+.form-check .form-check-input {
+  float: left;
+  margin-left: 0 !important;
+  margin: 10px 0;
+}
+
+.form-check label {
+  cursor: pointer;
+}
+
+.form-check label span {
+  display: block;
+  margin: 0 10px;
+  font-size: 23px;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.form-check .form-check-input:checked {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+.checkout-methods h2 {
+  color: var(--primary-color);
+  font-weight: 800;
+}
+
+.checkout-methods h3 {
+  color: var(--primary-color);
+}
+
+.iconsInput {
+  color: var(--primary-color);
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.required {
+  color: red;
+  font-size: 20px;
+  margin: 0 5px;
+}
+
+.right {
+    border: 1px solid #25d366;
+}
+
+.wrong {
+    border: 1px solid red;
+}
+
+/* end medthod check out */

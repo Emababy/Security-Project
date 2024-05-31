@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- animate on scroll library -->
+    <link href="./css/animate.min.css" rel="stylesheet">
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./css/english/main.css">
+    <!-- File Css Sign -->
+    <link rel="stylesheet" href="./css/english/sign.css">
+
+</head>
+
+<body>
+    <!-- Start Background -->
+    <div className="background">
+        <video loop autoPlay muted id="video">
+            <source src="video/video.mp4" type="video/mp4" />
+        </video>
+    </div>
+    <!-- End Background -->
+    <!-- Start Sign -->
+    <div class="signup d-flex justify-content-center align-items-center  wow animate__fadeIn" data-wow-duration="2s">
+        <div class=" container">
+        <form action="" id="submit">
+            <div class="form-floating mt-3 position-relative">
+                <input type="text" class="form-control" id="name" placeholder="name@example.com" required>
+                <label for="name">User Name</label>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            <div class="form-floating mt-3 position-relative">
+                <input type="email" class="form-control" id="email" placeholder="Password" required>
+                <label for="email">Email</label>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="form-floating mt-3 position-relative">
+                <input type="text" class="form-control" id="phone" placeholder="name@example.com" required>
+                <label for="phone">Phone</label>
+                <i class="fa-solid fa-phone"></i>
+            </div>
+            <div class="form-floating mt-3 position-relative">
+                <input type="text" class="form-control" id="address" placeholder="name@example.com" required>
+                <label for="address">Location</label>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="form-floating mt-3 position-relative">
+                <input type="password" class="form-control" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <div class="form-floating mt-3 position-relative">
+                <input type="password" class="form-control" id="conPassword" placeholder="Password" required>
+                <label for="conPassword">Confirm Password</label>
+                <i class="fa-solid fa-lock"></i>
+            </div>
+            <button id="buttonSubmit">Create Account</button>
+        </form>
+        <p class="text-center">Already have account,<a href="./signin.html" class="ms-1">sign in</a></p>
+    </div>
+    </div>
+    <!-- End Sign -->
+    <!-- File Script Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- File Js Wow -->
+    <script src="./js/wow.min.js"></script>
+    <!-- File Script Sign UP  -->
+    <script src="./js/english/signup.js"></script>
+</body>
+
+</html>

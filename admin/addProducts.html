@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- Font AweSome -->
+    <script src="https://kit.fontawesome.com/49f02d4a75.js" crossorigin="anonymous"></script>
+    <!-- File Css DraggableList -->
+    <link rel="stylesheet" href="./css/draggableList.css">
+    <!-- File Css Main -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- File Css Partner -->
+    <link rel="stylesheet" href="./css/admin.css">
+    <!-- File Css Footer Dash -->
+    <link rel="stylesheet" href="./css/footerDash.css">
+</head>
+
+<body>
+    <div class="admin">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-2 col-md-3 part-1 nonePadding bigScreen sidebar">
+                    <div class="dash">
+                        <img src="./images/logo/logo.png" class="ps-3 pt-3 pb-3 img-fluid" alt="">
+                        <ul>
+                            <li><a href="./dashboard.html"><i class="fa-solid fa-tv"></i> Dashboard</a></li>
+                            <li><a href="./products.html"><i class="fa-solid fa-bag-shopping"></i> Products</a></li>
+                            <li><a class="active" href="./addProducts.html"><i class="fa-solid fa-cart-plus"></i> Add
+                                    Products</a></li>
+                                    <li><a href="./updateProduct.html"><i class="fa-solid fa-screwdriver-wrench"></i> Update Product</a></li>
+
+                            <li><a href="./deleteProduct.html"><i class="fa-solid fa-trash"></i> Delete Products</a>
+                            </li>
+                            <li><a href="./addCategory.html"><i class="fa-solid fa-lines-leaning"></i> Add Category</a>
+                            </li>
+                            <li><a href="./orders.html"><i class="fa-solid fa-truck-fast"></i> Orders</a>
+                            </li>
+                            <li><a href="./users.html"><i class="fa-solid fa-users"></i> Users</a></li>
+                            <li><a href="./messages.html"><i class="fa-solid fa-message"></i>
+                                    Messages</a>
+                            </li>
+                            <li><a href="./manageAdmin.html"><i class="fa-solid fa-user-shield"></i>
+                                    Add Admin</a>
+                            </li>
+                            <li><a href="./adminprofile.html"><i class="fa-solid fa-user"></i>
+                                    Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-10 col-md-9 nonePadding d-flex justify-content-between flex-column height-100">
+                    <div class="product">
+                        <nav class="navbar navbar-expand-lg d-md-none">
+                            <div class="container-fluid pt-2">
+                                <div class="navbar-brand"><img src="./images/logo/logo.png"
+                                        class="ps-3 pt-3 pb-3 img-fluid" alt=""></div>
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <i class="fa-solid fa-bars"></i>
+                                </button>
+                                <div class="collapse navbar-collapse p-1" id="navbarNavAltMarkup">
+                                    <div class="navbar-nav">
+                                        <div class="dash smallScreen">
+                                            <ul>
+                                                <li><a href="./dashboard.html"><i class="fa-solid fa-tv"></i>
+                                                        Dashboard</a></li>
+                                                <li><a href="./products.html"><i class="fa-solid fa-bag-shopping"></i>
+                                                        Products</a></li>
+                                                <li><a class="active" href="./addProducts.html"><i
+                                                            class="fa-solid fa-cart-plus"></i> Add Products</a></li>
+                                                            <li><a href="./updateProduct.html"><i class="fa-solid fa-screwdriver-wrench"></i> Update Product</a></li>
+                                                <li><a href="./deleteProduct.html"><i class="fa-solid fa-trash"></i>
+                                                        Delete Products</a>
+                                                </li>
+                                                <li><a href="./addCategory.html"><i
+                                                            class="fa-solid fa-lines-leaning"></i> Add Category</a>
+                                                </li>
+                                                <li><a href="./orders.html"><i class="fa-solid fa-truck-fast"></i>
+                                                        Orders</a>
+                                                </li>
+                                                <li><a href="./users.html"><i class="fa-solid fa-users"></i> Users</a>
+                                                </li>
+                                                <li><a href="./messages.html"><i class="fa-solid fa-message"></i>
+                                                        Messages</a>
+                                                </li>
+                                                <li><a href="./manageAdmin.html"><i class="fa-solid fa-user-shield"></i>
+                                                        Add Admin</a>
+                                                </li>
+                                                <li><a href="./adminprofile.html"><i class="fa-solid fa-user"></i>
+                                                        Profile</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </nav>
+                        <div class="addProduct pt-5 ps-md-5">
+                            <div class="container overflow-hidden">
+                                <div class="title">
+                                    <h1>Add Product</h1>
+                                    <div aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item"><a href="./dashboard.html">Dashboard</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Add Product</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                                <form id="submit" enctype="multipart/form-data" class="show">
+                                    <div class="row">
+                                        <div class="col-lg-5">
+                                            <div class="mb-3">
+                                                <label for="productname" class="form-label">Product of the name is
+                                                    English
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="e.g Down like Quilt." id="productname" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-5">
+                                            <div class="mb-3">
+                                                <label for="description" class="form-label">Description of the name is
+                                                    English
+                                                </label>
+                                                <input type="text" class="form-control"
+                                                    placeholder="e.g A quilt micro fiber filling is filled with luxurious hollow fibe..."
+                                                    id="description" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-3">
+                                                    <div class="mb-3">
+                                                        <label for="size" class="form-label">Size
+                                                        </label>
+                                                        <input type="text" class="form-control" placeholder="e.g 180 cm"
+                                                            id="size">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="mb-3">
+                                                        <label for="price" class="form-label">Price
+                                                        </label>
+                                                        <input type="number" class="form-control" min="0"
+                                                            placeholder="e.g 9.99" id="price">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="mb-3">
+                                                        <label for="discount" class="form-label">Discount
+                                                        </label>
+                                                        <input type="number" class="form-control" min="0"
+                                                            placeholder="e.g 9.99" id="discount">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 mt-3">
+                                                    <button type="button" id="andSizeAndPrice" class="buttonAdd">Add
+                                                        Size and
+                                                        Price</button>
+                                                </div>
+                                            </div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">size</th>
+                                                        <th scope="col">price</th>
+                                                        <th scope="col">Discount</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="tablePrice">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="mb-3">
+                                                <label for="formFile" class="form-label">Product Image</label>
+                                                <input class="form-control" type="url" accept="image/*" id="formFile"
+                                                    name="image">
+                                                <button type="button" id="addImage" class="buttonAdd">Add
+                                                    Image</button>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="mb-3">
+                                                <label for="stock" class="form-label">Stock
+                                                </label>
+                                                <input type="number" class="form-control" placeholder="e.g 100"
+                                                    id="stock" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="row align-items-center">
+                                                <div class="col-lg-2 mb-1">
+                                                    <label for="color" class="form-label">Color</label>
+                                                    <input type="color" class="form-control form-control-color"
+                                                        id="color" value="#563d7c" title="Choose your color">
+                                                </div>
+                                                <div class="col-lg-5 mb-1">
+                                                    <label for="colorName" class="form-label">Color of the name is
+                                                        English</label>
+                                                    <input type="text" class="form-control" id="colorName"
+                                                        placeholder="Color of the name is English..."
+                                                        title="Choose your color">
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <button type="button" id="addColor" class="buttonAdd">Add
+                                                        Color</button>
+                                                </div>
+                                            </div>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">Color Name (En)</th>
+                                                        <!-- <th scope="col">Color Name (Ar)</th> -->
+                                                        <th scope="col">Color</th>
+                                                        <th scope="col">Action</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody id="colors">
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="col-lg-9">
+                                            <div class="mb-3">
+                                                <select class="form-select" id="categories"
+                                                    aria-label="Default select example" required>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <button type="submit" id="submitButton" class="buttonAdd">Add
+                                                Product</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <ul class="draggable-list" id="draggable-list">
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <footer class="pb-3 pt-3">
+                        <div class="container d-flex justify-content-end align-items-center">
+                            <div class="div">
+                                ©2023 - 24 <a href="#">E-Commerce</a>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- File Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- File Js Add Product -->
+    <script src="./js/addProduct.js"></script>
+
+</body>
+
+</html>

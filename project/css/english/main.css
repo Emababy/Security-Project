@@ -1,0 +1,234 @@
+/* Font Google */
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+/* Constants */
+:root {
+  --primary-color: #28b8c0;
+  --section-color: #eff7fa;
+  --brown-color: #797979;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f9f9f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+  border-radius: 30px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+.buttonStyle {
+  padding: 10px 35px !important;
+  border-radius: 20px;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  transition: 0.5s;
+  color: white;
+}
+
+.buttonStyle:focus {
+  background-color: var(--primary-color);
+  border: 2px solid var(--primary-color);
+}
+
+.buttonStyle:hover {
+  border: 1px solid var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.buttonStyleBack {
+  display: block;
+  border-radius: 10px;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 5px 40px;
+  text-align: center;
+  width: fit-content;
+  margin: 5px auto;
+  background-color: transparent;
+  font-size: 25px;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+@media (max-width: 767px) {
+  .buttonStyleBack {
+    padding: 5px 20px;
+    margin: 50px auto 0;
+    font-size: 20px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 992px) {
+  .buttonStyleBack {
+    margin: 20px auto 0;
+  }
+}
+
+.buttonStyleBack i {
+  font-size: 20px;
+  margin: 0 10px 0 0;
+}
+
+.buttonStyleBack:hover {
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.right {
+  border: 1px solid #25d366;
+}
+
+.wrong {
+  border: 1px solid red;
+}
+
+.checkNone {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.tablefooternone {
+  display: none;
+}
+.bigNone {
+  display: block;
+}
+
+.smallNone {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .bigNone {
+    display: none;
+  }
+}
+
+@media (max-width: 992px) {
+  .smallNone {
+    display: block;
+  }
+}
+
+/* Button Whatts APP */
+.whatts {
+  color: #fff;
+  position: fixed;
+  bottom: 130px;
+  right: 15px;
+  cursor: pointer;
+  z-index: 10300;
+  font-size: 50px;
+  background-color: #25d366;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.whatts:hover,
+.whatts:focus {
+  color: white;
+}
+
+.whatts i {
+  transform: translate(2px, -11px);
+}
+
+.whatts::before {
+  content: "";
+  background-color: #25d366;
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  left: 45px;
+  top: 35%;
+}
+
+/* Button Whatts APP */
+/* Button Scroll */
+.scroll {
+  background-color: var(--primary-color);
+  border: none;
+  color: #fff;
+  padding: 1rem;
+  font-weight: 800;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  cursor: pointer;
+  animation-name: scrol;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  border: none;
+  z-index: 10300;
+  display: none;
+}
+
+.scroll:hover {
+  background-color: #28b8c0a9;
+}
+
+.scroll:focus {
+  color: #fff;
+  background-color: var(--primary-color);
+  border-color: none;
+  box-shadow: none;
+  border: none;
+}
+
+@keyframes scrol {
+  0% {
+    bottom: 10px;
+  }
+
+  50% {
+    bottom: 30px;
+  }
+
+  100% {
+    bottom: 10px;
+  }
+}
+
+/* Button Scroll */
+.breadcrumb {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.breadcrumb a {
+  color: var(--primary-color);
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+  color: #f7feff;
+}

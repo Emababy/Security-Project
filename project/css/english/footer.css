@@ -1,0 +1,138 @@
+/* start footer */
+footer {
+    background-color: #182333 !important;
+    opacity: 1 !important;
+}
+
+
+footer h3 {
+    color: white;
+    font-weight: 600;
+}
+
+footer .part-2 ul {
+    padding: 0;
+}
+
+footer .part-2 ul li {
+    position: relative;
+    color: #999999;
+    margin-bottom: 15px;
+    padding-left: 25px;
+    font-size: 14px;
+    transition: 0.5s;
+}
+
+footer .part-2 ul li a {
+    color: #999999;
+    transition: 0.5s;
+}
+
+footer .part-2 li a:hover {
+    letter-spacing: 1.4px;
+    color: #999999;
+}
+
+
+footer .part-2 ul li.phone::before {
+    content: "\f095";
+}
+
+footer .part-2 ul li.email::before {
+    content: "\f0e0";
+}
+
+footer .part-2 ul li::before {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 15px;
+    font-family: "fontAwesome";
+    color: #999999;
+}
+
+footer .part-3 ul {
+    padding: 0;
+}
+
+footer .part-3 ul li a {
+    color: #999999;
+    font-weight: 600;
+    font-size: 14px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    width: fit-content;
+}
+
+footer .part-3 ul li a::before {
+    content: "\f105";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: "fontAwesome";
+    font-size: 13px;
+    color: rgb(107, 106, 106);
+}
+
+footer .part-3 ul li a:hover {
+    letter-spacing: 1.4px;
+    color: #f7f8fc;
+}
+
+footer .email-call a {
+    color: white;
+    padding: 15px 30px;
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    text-align: center;
+    font-size: 17px;
+    display: block;
+}
+
+footer .icon {
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+footer .part-4 .icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    font-size: 18px;
+    color: #fff;
+}
+
+footer .facebook {
+    background-color: #1877f2;
+}
+
+footer .twitter {
+    background-color: #1da1f2;
+}
+
+footer .linkedin {
+    background-color: #0077b5;
+}
+
+footer .instagram {
+    background-color: #fd1d1d;
+}
+
+.footer p {
+    color: #ffffff94;
+    border-top: 1px solid #77777752;
+    padding-top: 18px;
+}
+
+/* end footer */

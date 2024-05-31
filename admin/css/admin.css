@@ -1,0 +1,390 @@
+:root {
+    --ground-color:rgb(27, 38, 53);
+}
+
+
+.admin {
+    background-color: #eff7fa;
+}
+
+.sidebar {
+    background-color: #FFFFFF;
+}
+
+
+.order {
+    padding:15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 7%) !important;
+    background-color:#FFFFFF;
+}
+
+.height-100 {
+    min-height: 100vh;
+}
+
+.admin ul {
+    list-style: none;
+    padding: 0;
+}
+
+.admin .part-1 {
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    min-height: 100vh;
+}
+
+.admin ul a {
+    text-decoration: none;
+    display: block;
+    margin: 20px 15px;
+    color:#999;
+    transition: 0.5s;
+}
+
+.admin ul a:hover {
+    color: black;
+}
+
+.admin ul a.active {
+    color: black;
+}
+
+.admin ul a:hover i {
+    color: var(--primary-color);
+}
+
+
+.admin ul a i {
+    margin: 0 5px;
+    color: var(--primary-color);
+    font-size: 18px;
+}
+
+.admin .row .nonePadding {
+    padding: 0;
+}
+
+.rejected {
+    background-color: red;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin:0px 10px;
+    transition:0.5s;
+}
+
+.rejected:hover {
+    background-color: transparent;
+    color: red;
+}
+
+
+.accept {
+    background-color: #00ff00;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    font-weight: 600;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+    margin:0px 10px;
+    transition:0.5s;
+}
+
+.accept:hover {
+    background-color: transparent;
+    color: #00ff00;
+}
+
+
+.admin nav {
+    background-color: var(--primary-color);
+}
+
+.admin nav .navbar-brand {
+    color: white;
+}
+
+.admin nav i {
+    color: white;
+}
+
+.admin nav i:hover,
+.admin nav .dropdown-toggle:focus {
+    color: white;
+}
+
+.admin nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.admin nav .fa-bars {
+    font-size: 35px;
+    color: white;
+}
+
+
+
+@media(max-width:768px) {
+    .bigScreen {
+        display: none;
+    }
+
+    .admin nav .navbar-collapse {
+        background-color: white;
+    }
+
+}
+
+@media(min-width:768px) {
+    .smallScreen {
+        display: none;
+    }
+
+    .admin nav .fa-bars {
+        display: none;
+    }
+}
+
+
+.buttonAdd {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 10px;
+    padding: 5px 0px;
+    margin: 5px 0;
+    transition: 0.5s;
+}
+
+.buttonAdd:hover {
+    color: var(--primary-color);
+    background-color: white;
+}
+
+.admin input:focus,
+.admin select:focus {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #28b8c09a;
+}
+
+.admin .delete {
+    color: #f80031;
+    background-color: rgba(251, 175, 190, .5);
+    border: navajowhite;
+    border-radius: 9px;
+    font-size: 11px;
+    padding: 3px 10px;
+}
+
+
+.admin .edit {
+    color: #2643e9;
+    background-color: rgba(203,210,246,.5);
+    border: navajowhite;
+    border-radius: 9px;
+    font-size: 11px;
+    padding: 3px 10px;
+}
+
+.admin table img {
+    width: 60px;
+}
+
+
+
+.admin .dashBoard .box {
+    background-color:#FFFFFF;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 7%) !important;
+}
+
+
+.admin .latestProducts {
+    background-color: var(--nav-color);
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 7%) !important;
+    background-color:#FFFFFF;
+
+}
+
+.admin .latestProducts .icon {
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.admin .latestProducts .icon:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.admin .latestProducts .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+
+.admin .search .close {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 18px;
+    width: 35px;
+
+}
+
+.admin .numberOfUsers {
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.admin .search  {
+    flex: 1;
+    margin: 0px 29px 0 0px;
+}
+
+@media(max-width:767px) {
+    .admin .search  {
+        flex: 1;
+        margin: 0px;
+        width: 100%;
+    }
+}
+
+.admin  .showUsers {
+    border-top: 1px solid #77777745;
+    padding-top: 13px;
+}
+
+
+.admin .search input {
+    display:block;
+    border-right: none;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    box-shadow: none;
+}
+
+
+
+
+.offcanvas-start {
+    width: 100% !important;
+}
+
+
+.offcanvas-start input:focus,
+.offcanvas-start select:focus {
+    background-color: transparent;
+    border-color: #ffa35866;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem #ffa35866;
+}
+
+.admin .dishes img {
+    width: 150px;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    --bs-table-accent-bg: var(--bs-table-striped-bg);
+}
+
+.warring {
+    font-weight:600;
+    color:red;
+}
+
+.color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin:0px 5px;
+}
+
+.buttonDelete {
+    border: 1px solid red;
+    background-color: red;
+    transition: 0.5s;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 16px;
+    display: block;
+    margin: 10px 0 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.buttonDelete:hover {
+    background-color: white;
+    color: red;
+}
+
+
+.show {
+    border-top: 1px solid #77777745;
+    padding-top: 13px;
+}
+
+.answered {
+    border: 1px solid  var(--primary-color);
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    color: white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 16px;
+    display: block;
+    margin: 10px 0 0 auto;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.answered:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.message {
+    border: 1px solid #77777757;
+    padding: 14px;
+    border-radius: 20px;
+    margin-bottom:15px;
+}
+
+.message h5 {
+    color: var(--primary-color);
+}
+
+
+.message h5 span {
+    color:#333;
+}
+
+.buttonSearch {
+    border: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}

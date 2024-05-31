@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce</title>
+    <!--Bootstrap css file-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- animate on scroll library -->
+    <link href="./css/animate.min.css" rel="stylesheet" />
+    <!-- Font AweSome -->
+    <script
+      src="https://kit.fontawesome.com/49f02d4a75.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Header css file -->
+    <link rel="stylesheet" href="./css/english/header.css" />
+    <!-- Footer css file -->
+    <link rel="stylesheet" href="./css/english/footer.css" />
+    <!-- userHome css file -->
+    <link rel="stylesheet" href="./css/english/userHome.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./css/english/payment.css" />
+    <!-- Main css file -->
+    <link rel="stylesheet" href="./css/english/main.css" />
+  </head>
+
+  <body>
+    <div
+      class="payment checkout-methods"
+      tabindex="-1"
+      id="offcanvasTop"
+      aria-labelledby="offcanvasTopLabel"
+    >
+      <div class="d-flex justify-content-start">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center">
+            <div class="col-lg-6 col-md-10 col-sm-12">
+              <h2 class="text-center m-5">Select the payment method</h2>
+              <h3>Choose the payment method</h3>
+              <div class="form">
+                <div class="form-check">
+                  <input
+                    class="form-check-input radio"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios1"
+                    value="card"
+                    checked
+                  />
+                  <label
+                    class="form-check-label d-flex justify-content-between align-items-center"
+                    for="exampleRadios1"
+                  >
+                    <span>Card Payment</span>
+                    <img src="./images/cashless-payment.png" alt="" />
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input radio"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios2"
+                    value="cash"
+                  />
+                  <label
+                    class="form-check-label d-flex justify-content-between align-items-center"
+                    for="exampleRadios2"
+                  >
+                    <span>Cash</span>
+                    <img src="./images/cash-on-delivery (1).png" alt="" />
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input
+                    class="form-check-input radio"
+                    type="radio"
+                    name="exampleRadios"
+                    id="exampleRadios3"
+                    value="valu"
+                  />
+                  <label
+                    class="form-check-label d-flex justify-content-between align-items-center"
+                    for="exampleRadios3"
+                  >
+                    <span>Valu</span>
+                    <img
+                      src="./images/valu-seeklogo.com-1.png"
+                      width="40px"
+                      alt=""
+                    />
+                  </label>
+                </div>
+              </div>
+              <button class="buttonStyle check" id="checkoutFinal">
+                Check Out <i class="fa-solid fa-right-long"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CDN Sweetalert -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- File Js Bootstrap -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- File Js Wow -->
+    <script src="./js/wow.min.js"></script>
+    <!-- File Js Payment -->
+    <script src="./js/english/payment.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
